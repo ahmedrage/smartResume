@@ -26,32 +26,3 @@ EXPOSE 80
 
 # Set the command to run the FastAPI app with `fastapi run`
 CMD ["fastapi", "run", "app/main.py", "--port", "80"]
-
-
-# FROM public.ecr.aws/lambda/python:3.10
-
-# # Copy requirements.txt
-# COPY requirements.txt ${LAMBDA_TASK_ROOT}
-
-# # Install the specified packages
-# RUN pip install -r requirements.txt
-
-# # Download spaCy model
-# RUN python -m spacy download en_core_web_sm
-
-# # Download NLTK data (punkt and stopwords)
-# RUN mkdir -p /opt/nltk_data && \
-#     python -m nltk.downloader -d /opt/nltk_data punkt && \
-#     python -m nltk.downloader -d /opt/nltk_data stopwords
-
-# # Set NLTK_DATA environment variable
-# ENV NLTK_DATA=/opt/nltk_data
-
-# # Copy the entire application code
-# COPY app ${LAMBDA_TASK_ROOT}/app
-
-# # Set the working directory
-# WORKDIR ${LAMBDA_TASK_ROOT}/app
-
-# # Set the CMD to your handler
-# CMD ["app.src.handler.handler"]
