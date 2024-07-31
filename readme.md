@@ -71,7 +71,6 @@ You can find the live application at [https://smart-resume.meteorapp.com/](https
 
 ## Project Structure
 
-.
 ├── app
 │ ├── init.py
 │ ├── constants.py
