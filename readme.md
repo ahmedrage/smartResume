@@ -71,6 +71,7 @@ You can find the live application at [https://smart-resume.meteorapp.com/](https
 
 ## Project Structure
 
+```
 ├── app
 │ ├── init.py
 │ ├── constants.py
@@ -79,6 +80,7 @@ You can find the live application at [https://smart-resume.meteorapp.com/](https
 ├── main.py
 ├── requirements.txt
 └── README.md
+```
 
 - `main.py`: The main FastAPI application file.
 - `app/`: Directory containing the core application modules.
